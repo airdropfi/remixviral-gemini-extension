@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "remixviral": {
+      "serverUrl": "https://remixviral.ai/api/mcp"
+    }
+  }
+}

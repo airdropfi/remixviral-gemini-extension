@@ -1,0 +1,12 @@
+description = "Make a faceless Short from a topic: price check first, create only after your yes"
+prompt = """
+Make a faceless Short on the user's RemixViral account. Topic from the user: {{args}}
+This spends credits and cannot be undone, so never skip the confirmation.
+
+1. Agree the topic (up to 500 characters), and optionally the niche, duration (30, 60 or 90 seconds), art style and language with the user. Call `list_niches` for the valid niche and art style values.
+2. Call `get_credit_balance`. Tell the user their balance and the cost exactly as the `create_video` tool description states it. Show the exact request you will send.
+3. Ask: "Create this video? It spends credits and cannot be undone." Wait for a clear yes.
+4. Call `create_video` once. Do not retry on a timeout or error: call `list_videos` first, because an identical request within 10 minutes returns the existing video. Use `allowDuplicate: true` only for a deliberate repeat the user asked for.
+5. Poll `get_video` every 20 to 30 seconds until `COMPLETED` or `FAILED`. Give the `videoUrl` when it completes. On `FAILED`, relay the error and any credit numbers as returned.
+6. If the tools say sign-in is required, tell the user to run `/mcp auth remixviral`.
+"""

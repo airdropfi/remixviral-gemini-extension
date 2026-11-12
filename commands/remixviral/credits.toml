@@ -1,0 +1,9 @@
+description = "Show your RemixViral credit balance (read-only)"
+prompt = """
+Show the user's RemixViral credit balance. This is read-only: do not create anything.
+
+1. Call `get_credit_balance`.
+2. Report the balance, monthly allocation and plan exactly as returned. Do not estimate, convert to dollars or add numbers the tool did not return.
+3. If it is zero or low, say so plainly. You cannot buy credits from here; the user does that in the RemixViral app.
+4. If the tools say sign-in is required, tell the user to run `/mcp auth remixviral`.
+"""

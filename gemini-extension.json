@@ -1,0 +1,12 @@
+{
+  "name": "remixviral",
+  "version": "1.0.0",
+  "description": "Read the ranked, captioned Shorts RemixViral cut from long videos you own, and make faceless Shorts from a topic, from Gemini CLI. Starting a faceless video spends credits and asks first.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "remixviral": {
+      "httpUrl": "https://remixviral.ai/api/mcp",
+      "timeout": 60000
+    }
+  }
+}

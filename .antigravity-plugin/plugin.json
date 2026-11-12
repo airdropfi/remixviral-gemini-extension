@@ -1,0 +1,28 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "remixviral",
+  "displayName": "RemixViral",
+  "version": "1.0.0",
+  "description": "Read the ranked Shorts RemixViral cut from long videos you own, and make faceless Shorts from a topic. Faceless videos spend credits and ask first.",
+  "logo": "assets/icon.png",
+  "suggestedPrompts": [
+    "Show the best clips RemixViral found in my latest upload",
+    "Show my latest RemixViral videos and their status",
+    "How many RemixViral credits do I have?"
+  ],
+  "author": {
+    "name": "RemixViral",
+    "url": "https://remixviral.ai"
+  },
+  "homepage": "https://remixviral.ai/en/developers",
+  "repository": "https://github.com/airdropfi/remixviral-gemini-extension",
+  "license": "MIT",
+  "keywords": [
+    "clips",
+    "shorts",
+    "video",
+    "podcast clips",
+    "mcp",
+    "remixviral"
+  ]
+}
